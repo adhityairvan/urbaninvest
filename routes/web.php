@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/admin',function(){
+    return view('adminPage.master');
+});
+Route::get('/admin/user-manage', function(){
+    return view('adminPage.user-manage');
+});
+Route::get('/admin/manage-perusahaan/tambah',function (){
+    return view('adminPage.tambahPerusahaan');
+});
